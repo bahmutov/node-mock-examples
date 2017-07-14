@@ -1,0 +1,20 @@
+{
+  "name": "node-mock-examples",
+  "version": "1.0.0",
+  "description": "Examples of tests that mock Node system APIs: fs, http, child_process, timers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/node-mock-examples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bahmutov/node-mock-examples/issues"
+  },
+  "homepage": "https://github.com/bahmutov/node-mock-examples#readme"
+}
