@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/bahmutov/node-mock-examples#readme",
   "devDependencies": {
-    "consolemock": "^0.2.1",
     "mocha": "^3.4.2",
     "mock-fs": "^4.4.1",
     "mock-stdio": "^1.0.0",
