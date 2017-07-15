@@ -1,0 +1,4 @@
+exports['saves console calls 1'] = "first line\nsecond line with \"foo\" and 42\neven groups of messages\n"
+
+exports['saves console calls 2'] = "\n      and a simple error text\n      over several lines\n    \n"
+
