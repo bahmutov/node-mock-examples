@@ -22,9 +22,11 @@
   "homepage": "https://github.com/bahmutov/node-mock-examples#readme",
   "devDependencies": {
     "fs-extra": "^4.0.0",
+    "got": "^7.1.0",
     "mocha": "^3.4.2",
     "mock-fs": "^4.4.1",
     "mock-stdio": "^1.0.0",
+    "nock": "^9.0.13",
     "prettier-standard": "^6.0.0",
     "sinon": "^2.3.8",
     "snap-shot": "^2.17.0",

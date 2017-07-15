@@ -16,7 +16,7 @@ than stubbing your own internal code. And simpler to update in the future!
 * [x] [spec](test/console-spec.js) console mocking with [mock-stdio](https://github.com/catdad/mock-stdio)
 * [x] [spec](test/fs-callback-spec.js) async `fs` methods
 * [x] [spec](test/fake-file-system-spec.js) entire file system with [mock-fs][mock-fs]
-* [ ] network request with [nock][nock]
+* [x] [spec](test/network-spec.js) network request with [nock][nock]
 * [ ] `child_process.spawn`
 * [ ] `child_procesa.exec`
 * [ ] `setTimeout` with fake timer
