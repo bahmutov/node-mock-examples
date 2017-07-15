@@ -1,0 +1,2 @@
+exports['restores FS before trying to load snapshot 1'] = "text from file foo/b.txt\n===\n\n    last file with some\n    some text in file baz.txt\n  "
+
