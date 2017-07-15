@@ -1,31 +1,33 @@
-const fs = require('fs')
+const fse = require('fs-extra')
 
-function readFile(filename) {
-  if (fs.existsSync(filename)) {
-    return fs.readFileSync(filename, 'utf8')
-  }
-  throw new Error('Cannot find file ' + filename)
+// read all files and return concatenated text
+function readFiles(...filenames) {
+  return Promise.all(filenames.map(name => fse.readFile(name, 'utf8')))
+    .then(contents => contents.join('\n===\n'))
 }
 
-describe('mocking individual fs sync methods', () => {
-  const sinon = require('sinon')
+describe('mocks several files by create a file system', () => {
+  const mock = require('mock-fs')
 
   beforeEach(() => {
-    sinon.stub(fs, 'existsSync')
-      .withArgs('foo.txt')
-      .returns('true')
-    sinon.stub(fs, 'readFileSync')
-      .withArgs('foo.txt', 'utf8')
-      .returns('fake text')
+    mock({
+      'foo/bar/a.txt': 'text from file foo/bar/a.txt',
+      'foo/b.txt': 'text from file foo/b.txt',
+      'baz.txt': `
+        last file with some
+        some text in file baz.txt
+      `
+    })
   })
 
   afterEach(() => {
-    // restore individual methods
-    fs.existsSync.restore()
-    fs.readFileSync.restore()
+    mock.restore()
   })
 
-  it('reads non-existent file', () => {
-    console.assert(readFile('foo.txt') === 'fake text')
+  it('several files', () => {
+    return readFiles('foo/bar/a.txt', 'foo/b.txt', 'baz.txt')
+      .then(text => {
+        console.assert(text.includes('foo/b.txt'))
+      })
   })
 })
