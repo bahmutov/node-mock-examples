@@ -32,7 +32,7 @@ rely on anything Mocha-specific.
 
 ## Have a suggestion or an example to add?
 
-File an [issue](/issues/new)!
+File an [issue](issues/new)!
 
 ### Small print
 
