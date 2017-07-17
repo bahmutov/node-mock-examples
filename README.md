@@ -19,7 +19,7 @@ than stubbing your own internal code. And simpler to update in the future!
 * [x] [spec](test/network-spec.js) network request with [nock][nock]
 * [x] [spec](test/exec-spec.js) mocks `child_process.exec` call using [stub-spawn-once][stub-spawn-once]
 * [x] [spec](test/spawn-spec.js) mocks `child_process.spawn` call using [stub-spawn-once][stub-spawn-once]
-* [ ] `setTimeout` with fake timer
+* [x] [spec](test/interval-spec.js) mocks `setInterval` (same for `setTimeout`) with fake timers using [sinon][sinon]
 
 All examples use [Mocha](https://mochajs.org/) test framework, but do not
 rely on anything Mocha-specific.
