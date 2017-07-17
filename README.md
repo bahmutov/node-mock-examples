@@ -13,7 +13,7 @@ than stubbing your own internal code. And simpler to update in the future!
 
 * [x] [spec](test/fs-call-spec.js) individual synchronous `fs` methods with [sinon][sinon]
 * [x] [spec](test/fs-sandbox-spec.js) restoring all mocked methods via [sinon sandbox][sinon sandbox]
-* [x] [spec](test/console-spec.js) console mocking with [mock-stdio](https://github.com/catdad/mock-stdio)
+* [x] [spec](test/console-spec.js) console mocking with [mock-stdio](https://github.com/catdad/mock-stdio) and [console-pop][console-pop]
 * [x] [spec](test/fs-callback-spec.js) async `fs` methods
 * [x] [spec](test/fake-file-system-spec.js) entire file system with [mock-fs][mock-fs]
 * [x] [spec](test/network-spec.js) network request with [nock][nock]
@@ -29,6 +29,7 @@ rely on anything Mocha-specific.
 [mock-fs]: https://github.com/tschaub/mock-fs
 [nock]: https://github.com/node-nock/nock#readme
 [stub-spawn-once]: https://github.com/bahmutov/stub-spawn-once
+[console-pop]: https://github.com/bahmutov/console-pop
 
 ## Have a suggestion or an example to add?
 

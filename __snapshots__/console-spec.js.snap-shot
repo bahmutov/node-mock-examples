@@ -1,4 +1,6 @@
 exports['saves console calls 1'] = "first line\nsecond line with \"foo\" and 42\neven groups of messages\n"
 
-exports['saves console calls 2'] = "\n      and a simple error text\n      over several lines\n    \n"
+exports['saves console calls 2'] = "\n    and a simple error text\n    over several lines\n  \n"
+
+exports['saves stdout using console-pop 1'] = "first line\nsecond line with \"%s\" and %dfoo42\neven groups of messages"
 
