@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-function readFile(filename) {
+function readFile (filename) {
   if (fs.existsSync(filename)) {
     return fs.readFileSync(filename, 'utf8')
   }
@@ -12,10 +12,9 @@ describe('restoring all methods using sandbox', () => {
   const sandbox = sinon.sandbox.create()
 
   beforeEach(() => {
-    sandbox.stub(fs, 'existsSync')
-      .withArgs('foo.txt')
-      .returns('true')
-    sandbox.stub(fs, 'readFileSync')
+    sandbox.stub(fs, 'existsSync').withArgs('foo.txt').returns('true')
+    sandbox
+      .stub(fs, 'readFileSync')
       .withArgs('foo.txt', 'utf8')
       .returns('fake text')
   })
