@@ -18,7 +18,7 @@ than stubbing your own internal code. And simpler to update in the future!
 * [x] [spec](test/fake-file-system-spec.js) entire file system with [mock-fs][mock-fs]
 * [x] [spec](test/network-spec.js) network request with [nock][nock]
 * [x] [spec](test/exec-spec.js) mocks `child_procesa.exec` call using [stub-spawn-once][stub-spawn-once]
-* [ ] `child_process.spawn`
+* [x] [spec](test/spawn-spec.js) mocks `child_process.spawn` call using [stub-spawn-once][stub-spawn-once]
 * [ ] `setTimeout` with fake timer
 
 All examples use [Mocha][https://mochajs.org/] test framework, but do not
