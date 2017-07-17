@@ -17,11 +17,11 @@ than stubbing your own internal code. And simpler to update in the future!
 * [x] [spec](test/fs-callback-spec.js) async `fs` methods
 * [x] [spec](test/fake-file-system-spec.js) entire file system with [mock-fs][mock-fs]
 * [x] [spec](test/network-spec.js) network request with [nock][nock]
-* [x] [spec](test/exec-spec.js) mocks `child_procesa.exec` call using [stub-spawn-once][stub-spawn-once]
+* [x] [spec](test/exec-spec.js) mocks `child_process.exec` call using [stub-spawn-once][stub-spawn-once]
 * [x] [spec](test/spawn-spec.js) mocks `child_process.spawn` call using [stub-spawn-once][stub-spawn-once]
 * [ ] `setTimeout` with fake timer
 
-All examples use [Mocha][https://mochajs.org/] test framework, but do not
+All examples use [Mocha](https://mochajs.org/) test framework, but do not
 rely on anything Mocha-specific.
 
 [sinon]: http://sinonjs.org/
@@ -29,6 +29,10 @@ rely on anything Mocha-specific.
 [mock-fs]: https://github.com/tschaub/mock-fs
 [nock]: https://github.com/node-nock/nock#readme
 [stub-spawn-once]: https://github.com/bahmutov/stub-spawn-once
+
+## Have a suggestion or an example to add?
+
+File an [issue](/issues/new)!
 
 ### Small print
 
