@@ -11,7 +11,7 @@ describe('mocking individual fs sync methods', () => {
   const sinon = require('sinon')
 
   beforeEach(() => {
-    sinon.stub(fs, 'existsSync').withArgs('foo.txt').returns('true')
+    sinon.stub(fs, 'existsSync').withArgs('foo.txt').returns(true)
     sinon
       .stub(fs, 'readFileSync')
       .withArgs('foo.txt', 'utf8')

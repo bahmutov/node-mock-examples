@@ -12,6 +12,7 @@ than stubbing your own internal code. And simpler to update in the future!
 ## Mocking examples
 
 * [x] [spec](test/fs-call-spec.js) individual synchronous `fs` methods with [sinon][sinon]
+* [x] [spec](test/fs-call-through-spec.js) mocking a method for some arguments, but allowing the rest through to the original one
 * [x] [spec](test/fs-sandbox-spec.js) restoring all mocked methods via [sinon sandbox][sinon sandbox]
 * [x] [spec](test/console-spec.js) console mocking with [mock-stdio](https://github.com/catdad/mock-stdio) and [console-pop][console-pop]
 * [x] [spec](test/fs-callback-spec.js) async `fs` methods
