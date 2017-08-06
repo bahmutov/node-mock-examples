@@ -22,6 +22,7 @@ than stubbing your own internal code. And simpler to update in the future!
 * [x] [spec](test/spawn-spec.js) mocks `child_process.spawn` call using [stub-spawn-once][stub-spawn-once]
 * [x] [spec](test/interval-spec.js) mocks `setInterval` (same for `setTimeout`) with fake timers using [sinon][sinon]
 * [x] [spec](test/date-spec.js) mocks Date using [MockDate](https://github.com/boblauer/MockDate)
+* [x] [spec](test/date-sinon-spec.js) mocks specific Date prototype method using [sinon][sinon]
 
 All examples use [Mocha](https://mochajs.org/) test framework, but do not
 rely on anything Mocha-specific.
